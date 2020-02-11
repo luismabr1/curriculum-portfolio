@@ -2,6 +2,7 @@ import {Link} from '../routes';
 import Head from 'next/head';
 import NProgress from 'nprogress';
 import Router from 'next/router';
+import Navbar from './Navbar';
 
 const Layout = (props) => {
     Router.events.on('routeChangeStart', () => NProgress.start() );
@@ -14,19 +15,40 @@ const Layout = (props) => {
                 <title>{title}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
-            <header><Link route="home"><a>Podcasts</a></Link>  </header>
+           {/*  <header>
+                <Link route="home"><a>Luis Manuel Brito Romero</a></Link>
+                
+            <ul className="Navbar__items">
+                <li>Datos</li>
+                <li>Estudios</li>
+                <li>Trabajos</li>
+                <li>Portafolio</li>
+            </ul>
+            </header> */}
+            <Navbar />
             {children}
             <style jsx>{`
                 header{
                     color: #fff;
                     background: #8756ca;
                     padding: 15px;
-                    text-align: center;
+                    text-align: left;
                 }
                 header a{
                     color: #fff;
                     text-decoration: none;
                 }
+                .Navbar__items{
+                    padding-left: 30px;
+                    color: red;
+                }
+                .Navbar__items li{
+                    text-decoration: none;
+                }
+                .Navbar__items:hover {
+                    color: red;
+                    text-decoration: none;
+                  }
             `}
             </style>
             <style jsx global> { `

@@ -1,6 +1,9 @@
 import 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import ProyectsGrid from '../components/ProyectsGrid';
+import PersonalData from '../components/PersonalData';
+import RealizedStudies from '../components/RealizedStudies';
+import WorkExperience from '../components/WorkExperience';
 import Error from './_error';
 
 const Index = (props) => {
@@ -11,6 +14,12 @@ const Index = (props) => {
     }
     return ( 
         <Layout title="Podcats">
+
+            <PersonalData />
+
+            <RealizedStudies />
+
+            <WorkExperience /> 
   
             <ProyectsGrid channels={channels} />
 

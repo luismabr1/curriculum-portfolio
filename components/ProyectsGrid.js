@@ -4,6 +4,7 @@ const ProyectsGrid = (props) => {
     const channels = props.channels;
     return ( 
         <div className="channels">
+        <h1>Proyectos realizados</h1>
             {
                 channels.map((channel) => ( 
                     <Link route="channel" params={{ 
