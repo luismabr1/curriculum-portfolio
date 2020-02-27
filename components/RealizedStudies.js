@@ -1,22 +1,20 @@
-const RealizedStudies = () => (
-    <div className="container">
-        <h1>Datos Personales</h1>
-        <ul>
-            <li>Nombre</li>
-            <li>Apellido</li>
-            <li>Cedula</li>
-            <li>Telefono</li>
-            <li>Direccion</li>
-            <li>Email</li>
-        </ul>
-    
-            <style jsx> {`
-            .container{
-                border: 1px solid red;
-                margin: 20px;
-            }
-            `}
-            </style>
+const RealizedStudies = () => ( 
+    <div className = "container-studies">
+        <h1> Estudios Realizados </h1> 
+            <h2>TItulo de trabajo</h2>
+            <span>Durancion</span>
+            <span>Lugar</span>
+            <p>Descripcion</p>
+
+
+        <style jsx > { `
+                .container-studies{
+                    border: 1px solid blue;
+                    margin-right: 70px;
+                    margin-top: 20px;
+                }
+                ` }
+        </style>
     </div>
 );
 

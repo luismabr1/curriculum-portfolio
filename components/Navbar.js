@@ -31,11 +31,10 @@ const Navbar = () => {
             </div> 
         </div>
 
-        <style>{`
+        <style jsx>{`
             .Navbar {
                 width: 100%;
                 padding: 0.5rem 0;
-                padding-left: 15px;
                 background-color: #1C3643;
               }
               

@@ -13,7 +13,7 @@ const Index = (props) => {
         return <Error statusCode={statusCode} />
     }
     return ( 
-        <Layout title="Podcats">
+        <Layout title="Luis Brito CV">
 
             <PersonalData />
 
@@ -28,7 +28,7 @@ const Index = (props) => {
 
 }
 
-Index.getInitialProps = async ({ res }) => {
+ Index.getInitialProps = async ({ res }) => {
     try{
         let req = await fetch('https://api.audioboom.com/channels/recommended');
         let {body: channels} = await req.json();
@@ -39,7 +39,7 @@ Index.getInitialProps = async ({ res }) => {
         res.statusCode = 503
         return { channel: null, statusCode: 503 }
     }
-}
+} 
 
 
 export default Index;

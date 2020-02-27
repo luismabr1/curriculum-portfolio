@@ -2,13 +2,13 @@ import {Link} from '../routes';
 
 const ProyectsGrid = (props) => {
     const channels = props.channels;
-    return ( 
+    return (
+        <div>
+            <h1>Proyectos realizados</h1>
         <div className="channels">
-        <h1>Proyectos realizados</h1>
             {
                 channels.map((channel) => ( 
                     <Link route="channel" params={{ 
-
                         id: channel.id
                      }} key={channel.id}>
                         <a className='channel'>
@@ -24,6 +24,7 @@ const ProyectsGrid = (props) => {
                 display: grid;
                 grid-gap: 15px;
                 padding: 15px;
+                margin-right: 70px;
                 grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             }
             a.channel {
@@ -46,6 +47,7 @@ const ProyectsGrid = (props) => {
             }
             `}
             </style>
+        </div>
         </div>
 
         

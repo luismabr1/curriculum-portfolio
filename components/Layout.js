@@ -1,4 +1,4 @@
-import {Link} from '../routes';
+import { NextScript } from 'next/document';
 import Head from 'next/head';
 import NProgress from 'nprogress';
 import Router from 'next/router';
@@ -14,48 +14,34 @@ const Layout = (props) => {
             <Head>
                 <title>{title}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <style>{`
+                        #__next {
+                            width: 100%;
+                             overflow-x: hidden; 
+                         }
+                    `}
+          </style>
             </Head>
-           {/*  <header>
-                <Link route="home"><a>Luis Manuel Brito Romero</a></Link>
-                
-            <ul className="Navbar__items">
-                <li>Datos</li>
-                <li>Estudios</li>
-                <li>Trabajos</li>
-                <li>Portafolio</li>
-            </ul>
-            </header> */}
+
             <Navbar />
-            {children}
-            <style jsx>{`
-                header{
-                    color: #fff;
-                    background: #8756ca;
-                    padding: 15px;
-                    text-align: left;
-                }
-                header a{
-                    color: #fff;
-                    text-decoration: none;
-                }
-                .Navbar__items{
-                    padding-left: 30px;
-                    color: red;
-                }
-                .Navbar__items li{
-                    text-decoration: none;
-                }
-                .Navbar__items:hover {
-                    color: red;
-                    text-decoration: none;
-                  }
-            `}
-            </style>
-            <style jsx global> { `
+            <div className="container">
+                {children}  
+
+            </div>
+
+
+            <style jsx global> {`
+
                 body{
                     margin: 0;
                     font-family: system-ui;
                     background: white;
+                }
+                .container{
+                    width:100%;
+                    display: grid;
+                    margin-left: 50px;
+                    margin-right:50px;
                 }
                 /* Make clicks pass-through */
                     #nprogress {
