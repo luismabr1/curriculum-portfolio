@@ -40,7 +40,7 @@ const Layout = (props) => {
                 .container{
                     width:100%;
                     display: grid;
-                    margin-left: 50px;
+                    margin-left: 35px;
                     margin-right:50px;
                 }
                 /* Make clicks pass-through */

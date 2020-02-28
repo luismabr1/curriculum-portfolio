@@ -3,7 +3,7 @@ import Foto from '../static/FotoLuisBrito.jpg';
 const PersonalData = () => (
 
 
-<div className="container">
+<div className="container-datos">
     <div className="wrapper">
         <div className="image">
             <img src={ Foto }></img>
@@ -26,45 +26,44 @@ const PersonalData = () => (
     </div>
         <div className="abstract">
             <div className="abstract-content">
-                <p> Frelancer con intereses en los sistemas sociales, dinamica de sistemas, cibernetica e informatica.Desarrollador web con grandes aspiraciones en el area de las ciencias en general y en la informatica en particular.Apasionado a los videojuegos tanto
-                    en su programacion y creacion como en su disfrute.
+                <p> Frelancer con intereses en los sistemas sociales, dinamica de sistemas, cibernetica e informatica.
                 </p>
+                <p>Desarrollador web con grandes aspiraciones en el area de las ciencias en general y en la informatica en particular.</p>
+                <p>Apasionado a los videojuegos tanto
+                    en su programacion y creacion como en su disfrute.</p>
             </div>
         </ div>
     <style jsx> { `
 
-            .container{
+            .container-datos{
                 width:100%;
+                margin-top: 20px;
             }
             .wrapper{
                 grid-gap: 10px;
                 display: grid;
-                border: 1px solid gray;
-                margin-right: 120px;
-                background: gray;
-                justify-content: center;
+                margin-right: 70px;
                 grid-template-columns: repeat(720px, 1fr);
                 /* grid-template-columns: repeat(auto-fill, minmax(auto, 3fr)); */
+                border-radius: 3px;
+                box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
             }
             .datos{
                 text-align: center;
-                padding-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
                 width: 100%;
                 font-size: 20px;
-                
-                border: 1px solid pink;
-
             }
             .datos ul{
                 list-style-type: none;
                 margin: 0;
-                padding: 0;
                 justify-text: left;
             }
             .image{
                 margin-left: auto;
                 margin-right: auto;
-                width: 100%;
+                width: 70%;
                 border: 1px solid red;
             }
 
@@ -76,15 +75,17 @@ const PersonalData = () => (
             }
 
             .abstract{
-                display: grid;
-                grid-template-columns: repeat(365px, 1fr);
+                border: 1px solid blue;
+                margin-right: 70px;
+                margin-top: 20px;
+                border-radius: 3px;
+                box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
             }
             .abstract-content{
                 text-align: center;
                 width: 100%;
                 word-wrap: break-word;
                 font-size: 20px;
-                border: 1px solid black;
             }
 
             @media (min-width: 576px) {
@@ -94,15 +95,17 @@ const PersonalData = () => (
                 .wrapper{
                     grid-gap: 10px;
                     display: grid;
-                    /* grid-template-columns: repeat(575px, 1fr); */
-                    grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
+                     grid-template-columns: repeat(575px, 1fr); 
+                    /* grid-template-columns: repeat(auto-fill, minmax(350px, 3fr)); */
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .datos{
                     text-align: center;
-                    padding-top: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
                     width: 100%;
                     font-size: 20px;
-                    justify-content: left;
                 }
                 .datos ul{
                     list-style-type: none;
@@ -120,19 +123,196 @@ const PersonalData = () => (
                     border-radius: 50%;
                     align: center;
                     border: 5px solid white;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .abstract{
+                    border: 1px solid blue;
+                    margin-right: 70px;
+                    margin-top: 20px;
+                    width: 88%;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .abstract-content{
+                    text-align: center;
+                    width: 100%;
+                    word-wrap: break-word;
+                    font-size: 20px;
+                }
+              }
+              @media (min-width: 820px) {
+                .container{
+                    width:100%;
+                }
+                .wrapper{
+                    grid-gap: 10px;
+                    display: grid;
+                    justify-items: center;
+                    /* grid-template-columns: repeat(575px, 1fr); */
+                    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .datos{
+                    text-align: center;
+                    width: 100%;
+                    font-size: 20px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                .datos ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                .image{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    grid-column: 1;
+                    width: 70%;
+                    padding-left: 100px;
+                }
+                .image img{
+                    width:100%;
+                    border-radius: 50%;
+                    align: center;
+                    border: 5px solid white;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract{
                     display: grid;
                     grid-template-columns: repeat(365px, 1fr);
-                    justify-items: center;
+                    margin-right: 20px;
+                    width: 92%;
+                    justify-content: center;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract-content{
                     text-align: center;
-                    width: 50%;
                     word-wrap: break-word;
-                    border: 1px solid red;
+                    font-size: 20px;
+                    width: 100%;
                 }
-              }
+            }
+            @media (min-width: 1142px) {
+                .container{
+                    width:100%;
+                }
+                .wrapper{
+                    grid-gap: 10px;
+                    display: grid;
+                    justify-items: center;
+                    /* grid-template-columns: repeat(575px, 1fr); */
+                    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .datos{
+                    text-align: center;
+                    width: 100%;
+                    font-size: 22px;
+                    margin-left: 100px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                .datos ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                .image{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                    margin-left: 100px;
+                }
+                .image img{
+                    width:100%;
+                    border-radius: 50%;
+                    align: center;
+                    border: 5px solid white;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .abstract{
+                    display: grid;
+                    grid-template-columns: repeat(365px, 1fr);
+                    margin-right: 20px;
+                    width: 92%;
+                    justify-content: center;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .abstract-content{
+                    text-align: center;
+                    word-wrap: break-word;
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+            @media (min-width: 1503px) {
+                .container{
+                    width:100%;
+                }
+                .wrapper{
+                    grid-gap: 10px;
+                    display: grid;
+                    justify-items: center;
+                    /* grid-template-columns: repeat(575px, 1fr); */
+                    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .datos{
+                    text-align: center;
+                    padding-top: 30px;
+                    width: 100%;
+                    font-size: 20px;
+                    grid-column: 4 / 3;
+                    justify-content: left;
+                }
+                .datos ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                .image{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    grid-column: 2;
+                    margin-left: 0px;
+                    width: 80%;
+                }
+                .image img{
+                    width:100%;
+                    border-radius: 50%;
+                    align: center;
+                    border: 5px solid white;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .abstract{
+                    display: grid;
+                    grid-template-columns: repeat(365px, 1fr);
+                    margin-right: 20px;
+                    width: 92%;
+                    justify-content: center;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+                }
+                .abstract-content{
+                    text-align: center;
+                    word-wrap: break-word;
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
 
             `} </style>
 

@@ -7,12 +7,13 @@ const Navbar = () => {
       <div className="Navbar">
         <div className="container-fluid">
         <div className="Navbar__brand">
-          <Link href="/"><a className="Navbar__brand">
-            <img className="Navbar__brand-logo" src={logo} alt="Logo" />
-            <span className="font-weight-light">Luis</span>
-            <span className="font-weight-bold">Brito </span>
-          </a></Link>
-
+          <Link href="/">
+            <a className="Navbar__brand">
+              <img className="Navbar__brand-logo" src={logo} alt="Logo" />
+              <span className="font-weight-light">Luis</span>
+              <span className="font-weight-bold">Brito </span>
+            </a>
+          </Link>
 
               <a className="font-weight-light Navbar__items" href="/index#datos">
                 Datos
@@ -26,9 +27,7 @@ const Navbar = () => {
               <a className="font-weight-light Navbar__items" href="/" >
                 Experiencia
               </a>
-
-
-            </div> 
+            </div>
         </div>
 
         <style jsx>{`
@@ -37,30 +36,25 @@ const Navbar = () => {
                 padding: 0.5rem 0;
                 background-color: #1C3643;
               }
-              
               .Navbar__brand {
                 color: #ffffff;
                 display: inline-flex;
                 align-items: center;
                 text-decoration: none;
               }
-              
               .Navbar__brand:hover {
                 color: #ffffff;
                 text-decoration: none;
               }
-              
               .Navbar__brand-logo {
                 margin-right: 0.5rem;
                 width: 50px;
               }
-              
               .Navbar__items{
                 padding-left: 30px;
                 color: #ffffff;
                 text-decoration: none;
               }
-              
               .Navbar__items:hover {
                 color: #ffffff;
                 text-decoration: none;
