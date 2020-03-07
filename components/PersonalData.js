@@ -5,7 +5,7 @@ const PersonalData = () => (
 
 <div className="container-datos">
     <div className="wrapper">
-        <div className="image">
+        <div className="datos-image">
             <img src={ Foto }></img>
         </div>
 
@@ -60,14 +60,14 @@ const PersonalData = () => (
                 margin: 0;
                 justify-text: left;
             }
-            .image{
+            .datos-image{
                 margin-left: auto;
                 margin-right: auto;
                 width: 70%;
                 border: 1px solid red;
             }
 
-            .image img{
+            .datos-image img{
                 width:100%;
                 border-radius: 50%;
                 align: center;
@@ -112,13 +112,13 @@ const PersonalData = () => (
                     margin: 0;
                     padding: 0;
                 }
-                .image{
+                .datos-image{
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
                     width: 70%;
                 }
-                .image img{
+                .datos-image img{
                     width:100%;
                     border-radius: 50%;
                     align: center;
@@ -166,7 +166,7 @@ const PersonalData = () => (
                     margin: 0;
                     padding: 0;
                 }
-                .image{
+                .datos-image{
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
@@ -174,7 +174,7 @@ const PersonalData = () => (
                     width: 70%;
                     padding-left: 100px;
                 }
-                .image img{
+                .datos-image img{
                     width:100%;
                     border-radius: 50%;
                     align: center;
@@ -224,14 +224,14 @@ const PersonalData = () => (
                     margin: 0;
                     padding: 0;
                 }
-                .image{
+                .datos-image{
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
                     width: 70%;
                     margin-left: 100px;
                 }
-                .image img{
+                .datos-image img{
                     width:100%;
                     border-radius: 50%;
                     align: center;
@@ -281,7 +281,7 @@ const PersonalData = () => (
                     margin: 0;
                     padding: 0;
                 }
-                .image{
+                .datos-image{
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
@@ -289,7 +289,7 @@ const PersonalData = () => (
                     margin-left: 0px;
                     width: 80%;
                 }
-                .image img{
+                .datos-image img{
                     width:100%;
                     border-radius: 50%;
                     align: center;
