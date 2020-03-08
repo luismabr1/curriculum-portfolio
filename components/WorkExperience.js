@@ -14,11 +14,11 @@ const WorkExperience = () => (
                 <span>Desarrollador Web</span>
                 <span>Marzo 2017 - actualidad</span>
                 <span>Caracas</span>
-                <p>Creacion de pagina web oficial del Modelo Venezolano de Naciones Unidas (MOVENU). Aplicacion para el registro de inscripciones.</p>
+                <p><i>Creacion de pagina web oficial del Modelo Venezolano de Naciones Unidas (MOVENU). Aplicacion para el registro de inscripciones.</i></p>
         </div>
 
             <style jsx> {`
-            .container-work{        
+            .container-work{
                 margin-right: 70px;
                 margin-top:20px;
                 border-radius: 3px;

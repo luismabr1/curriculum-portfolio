@@ -1,4 +1,4 @@
-import Foto from '../static/FotoLuisBrito.jpg'; 
+import Foto from '../static/FotoLuisBrito.jpg';
 
 const PersonalData = () => (
 
@@ -6,7 +6,7 @@ const PersonalData = () => (
 <div className="container-datos">
     <div className="wrapper">
         <div className="datos-image">
-            <img src={ Foto }></img>
+            <img src={Foto}></img>
         </div>
 
         <div className="datos">
@@ -64,7 +64,6 @@ const PersonalData = () => (
                 margin-left: auto;
                 margin-right: auto;
                 width: 70%;
-                border: 1px solid red;
             }
 
             .datos-image img{
@@ -75,10 +74,8 @@ const PersonalData = () => (
             }
 
             .abstract{
-                border: 1px solid blue;
                 margin-right: 70px;
                 margin-top: 20px;
-                border-radius: 3px;
                 box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
             }
             .abstract-content{
@@ -123,15 +120,11 @@ const PersonalData = () => (
                     border-radius: 50%;
                     align: center;
                     border: 5px solid white;
-                    border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract{
-                    border: 1px solid blue;
                     margin-right: 70px;
                     margin-top: 20px;
-                    width: 88%;
-                    border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract-content{
@@ -179,14 +172,14 @@ const PersonalData = () => (
                     border-radius: 50%;
                     align: center;
                     border: 5px solid white;
-                    border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract{
                     display: grid;
                     grid-template-columns: repeat(365px, 1fr);
-                    margin-right: 20px;
-                    width: 92%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 80%;
                     justify-content: center;
                     border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
@@ -195,7 +188,9 @@ const PersonalData = () => (
                     text-align: center;
                     word-wrap: break-word;
                     font-size: 20px;
-                    width: 100%;
+                    width: 70%;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
             @media (min-width: 1142px) {
@@ -208,7 +203,6 @@ const PersonalData = () => (
                     justify-items: center;
                     /* grid-template-columns: repeat(575px, 1fr); */
                     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-                    border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .datos{
@@ -236,14 +230,14 @@ const PersonalData = () => (
                     border-radius: 50%;
                     align: center;
                     border: 5px solid white;
-                    border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract{
                     display: grid;
                     grid-template-columns: repeat(365px, 1fr);
-                    margin-right: 20px;
-                    width: 92%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 80%;
                     justify-content: center;
                     border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
@@ -252,7 +246,9 @@ const PersonalData = () => (
                     text-align: center;
                     word-wrap: break-word;
                     font-size: 20px;
-                    width: 100%;
+                    width: 90%;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
             @media (min-width: 1503px) {
@@ -294,14 +290,14 @@ const PersonalData = () => (
                     border-radius: 50%;
                     align: center;
                     border: 5px solid white;
-                    border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .abstract{
                     display: grid;
                     grid-template-columns: repeat(365px, 1fr);
-                    margin-right: 20px;
-                    width: 92%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 80%;
                     justify-content: center;
                     border-radius: 3px;
                     box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
@@ -310,7 +306,9 @@ const PersonalData = () => (
                     text-align: center;
                     word-wrap: break-word;
                     font-size: 20px;
-                    width: 100%;
+                    width: 90%;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
 

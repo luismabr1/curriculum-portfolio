@@ -17,10 +17,10 @@ const Layout = (props) => {
                 <style>{`
                         #__next {
                             width: 100%;
-                             overflow-x: hidden; 
-                         }
+                            overflow-x: hidden;
+                        }
                     `}
-          </style>
+            </style>
             </Head>
 
             <Navbar />

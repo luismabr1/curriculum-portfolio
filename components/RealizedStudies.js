@@ -25,9 +25,9 @@ const RealizedStudies = () => (
 
         <style jsx > { `
                 .container-studies{
-                    margin-right: 70px;
-                    margin-top: 20px;
-                 border-radius: 3px;
+                margin-right: 70px;
+                margin-top: 20px;
+                border-radius: 3px;
                 box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .studies-information{
