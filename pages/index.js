@@ -37,7 +37,7 @@ const Index = (props) => {
 
     } catch(e){
         res.statusCode = 503
-        return { channel: 'null', statusCode: 503 }
+        return { channel: null, statusCode: 503 }
     }
 } 
 

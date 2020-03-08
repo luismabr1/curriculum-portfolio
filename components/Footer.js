@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import logo from '../static/LOGO-MOVENU-BLANCO.png';
+import logo from '../static/FotoLuisBrito.jpg';
 
 const Footer = () => {
     return ( 
@@ -12,6 +12,7 @@ const Footer = () => {
                     <img className="Footer__brand-logo" src={logo} alt="Logo" />
                     <span className="font-weight-light">Luis</span>
                     <span className="font-weight-bold">Brito </span>
+                    <span className="font-weight-light"><i>En desarrollo...</i></span>
                     </a>
                 </Link>
             </div>
@@ -38,7 +39,8 @@ const Footer = () => {
               }
               .Footer__brand-logo {
                 margin-right: 0.5rem;
-                width: 50px;
+                width: 35px;
+                border-radius: 50%;
               }
               .Footer__items{
                 padding-left: 30px;

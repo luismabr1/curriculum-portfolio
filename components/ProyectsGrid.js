@@ -3,7 +3,7 @@ import {Link} from '../routes';
 const ProyectsGrid = (props) => {
     const channels = props.channels;
     return (
-        <div>
+        <div id="portfolio">
             <h1>Proyectos realizados</h1>
         <div className="channels">
             {

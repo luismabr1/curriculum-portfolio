@@ -3,7 +3,7 @@ import Foto from '../static/FotoLuisBrito.jpg';
 const PersonalData = () => (
 
 
-<div className="container-datos">
+<div className="container-datos" id="datos">
     <div className="wrapper">
         <div className="datos-image">
             <img src={Foto}></img>

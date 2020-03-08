@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import logo from '../static/LOGO-MOVENU-BLANCO.png';
+import logo from '../static/FotoLuisBrito.jpg';
 
 const Navbar = () => {
     return (
@@ -20,12 +20,15 @@ const Navbar = () => {
               </a>
 
 
-              <a className="font-weight-light Navbar__items" href="/" >
+              <a className="font-weight-light Navbar__items" href="/index#studies" >
                 Estudios
               </a>
 
-              <a className="font-weight-light Navbar__items" href="/" >
+              <a className="font-weight-light Navbar__items" href="/index#works" >
                 Experiencia
+              </a>
+              <a className="font-weight-light Navbar__items" href="/index#portfolio" >
+                Portafolio
               </a>
             </div>
         </div>
@@ -48,7 +51,8 @@ const Navbar = () => {
               }
               .Navbar__brand-logo {
                 margin-right: 0.5rem;
-                width: 50px;
+                width: 35px;
+                border-radius: 50%;
               }
               .Navbar__items{
                 padding-left: 30px;

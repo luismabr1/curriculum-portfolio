@@ -1,5 +1,5 @@
 const RealizedStudies = () => (
-    <div className = "container-studies">
+    <div className = "container-studies" id="studies">
         <h1> Estudios Realizados </h1>
             <div className="studies-information">
                 <h3>Ingeniería de Sistema (6 semestres)</h3>
