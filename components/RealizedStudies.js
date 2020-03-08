@@ -2,7 +2,7 @@ const RealizedStudies = () => (
     <div className = "container-studies">
         <h1> Estudios Realizados </h1>
             <div className="studies-information">
-                <h3>Ingeniería de Sistema (No culminado)</h3>
+                <h3>Ingeniería de Sistema (6 semestres)</h3>
                 <span>2012 - 2016</span>
                 <span>Barcelona - Venezuela</span>
                 <span><b>Universidad de Oriente</b></span>
@@ -14,9 +14,9 @@ const RealizedStudies = () => (
                 <span>Caracas - Venezuela</span>
                 <span><b>Instituto Universitario de Mercadotecnia (ISUM)</b></span>
             </div>
-            
+
             <div className="studies-information">
-                <h3>Diplomado en Programacion Web y Base de datos</h3>
+                <h3>Diplomado en Programacion Web</h3>
                 <span>2017</span>
                 <span>Caracas - Venezuela</span>
                 <span><b>Instituto de Nuevas Tecnologias (UNEWEB)</b></span>
@@ -25,10 +25,9 @@ const RealizedStudies = () => (
 
         <style jsx > { `
                 .container-studies{
-                    border: 1px solid blue;
                     margin-right: 70px;
                     margin-top: 20px;
-                                    border-radius: 3px;
+                 border-radius: 3px;
                 box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 }
                 .studies-information{
@@ -37,6 +36,8 @@ const RealizedStudies = () => (
                     grid-gap: 10px;
                     padding-left: 30px;
                     font-size: 20px;
+                    margin-bottom: 30px;
+                    
                 }
                 ` }
         </style>
