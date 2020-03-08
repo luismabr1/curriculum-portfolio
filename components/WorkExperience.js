@@ -10,16 +10,15 @@ const WorkExperience = () => (
         </div>
 
         <div className="work-information">
-                <h2>TItulo de trabajo</h2>
-                <span>Cargo</span>
-                <span>Durancion</span>
-                <span>Lugar</span>
-                <p>Descripcion</p>
+                <h2>MOVENU Internacional</h2>
+                <span>Desarrollador Web</span>
+                <span>Marzo 2017 - actualidad</span>
+                <span>Caracas</span>
+                <p>Creacion de pagina web oficial del Modelo Venezolano de Naciones Unidas (MOVENU). Aplicacion para el registro de inscripciones.</p>
         </div>
 
             <style jsx> {`
-            .container-work{
-                border: 1px solid red;
+            .container-work{        
                 margin-right: 70px;
                 margin-top:20px;
                 border-radius: 3px;
