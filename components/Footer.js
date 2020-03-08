@@ -39,7 +39,7 @@ const Footer = () => {
               }
               .Footer__brand-logo {
                 margin-right: 0.5rem;
-                width: 35px;
+                width: 25px;
                 border-radius: 50%;
               }
               .Footer__items{

@@ -4,7 +4,7 @@ const ProyectsGrid = (props) => {
     const channels = props.channels;
     return (
         <div id="portfolio">
-            <h1>Proyectos realizados</h1>
+            <h1>Proyectos realizados (aun en desarrollo... Estos son datos de prueba...)</h1>
         <div className="channels">
             {
                 channels.map((channel) => ( 
