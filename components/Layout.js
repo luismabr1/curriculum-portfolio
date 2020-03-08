@@ -3,6 +3,7 @@ import Head from 'next/head';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Layout = (props) => {
     Router.events.on('routeChangeStart', () => NProgress.start() );
@@ -28,6 +29,7 @@ const Layout = (props) => {
                 {children}  
 
             </div>
+            <Footer />
 
 
             <style jsx global> {`
