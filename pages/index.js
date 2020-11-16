@@ -8,7 +8,7 @@ import Error from './_error';
 
 const Index = (props) => {
 
-    const {channels, statusCode} = props;
+    const {portfolio, statusCode} = props;
     if(statusCode !== 200){
         return <Error statusCode={statusCode} />
     }
@@ -21,7 +21,7 @@ const Index = (props) => {
 
             <WorkExperience /> 
   
-            <ProyectsGrid channels={channels} />
+            <ProyectsGrid portfolio={portfolio} />
 
         </Layout>
     );
@@ -30,14 +30,13 @@ const Index = (props) => {
 
  Index.getInitialProps = async ({ res }) => {
     try{
-        let req = await fetch('https://api.audioboom.com/channels/recommended');
-        let {body: channels} = await req.json();
-    
-        return { channels, statusCode: 200 }
+        let req = await fetch('http://localhost:3000/api/portfolio');
+        let {body: portfolio} = await req.json();
+        return { portfolio, statusCode: 200 }
 
     } catch(e){
         res.statusCode = 503
-        return { channel: null, statusCode: 503 }
+        return { portfolio: null, statusCode: 503 }
     }
 } 
 

@@ -1,39 +1,40 @@
 import {Link} from '../routes';
 
 const ProyectsGrid = (props) => {
-    const channels = props.channels;
+    const proyects = props.portfolio;
+    console.log(props)
     return (
         <div id="portfolio">
             <h1>Proyectos realizados (aun en desarrollo... Estos son datos de prueba...)</h1>
-        <div className="channels">
+        <div className="proyects">
             {
-                channels.map((channel) => ( 
-                    <Link route="channel" params={{ 
-                        id: channel.id
-                     }} key={channel.id}>
-                        <a className='channel'>
-                            <img src={channel.urls.logo_image.original} alt=""/>
-                            <h2>{channel.title}</h2>
+                proyects.map((proyect) => ( 
+                    <Link route="proyect" params={{ 
+                        id: proyect.id
+                     }} key={proyect.id}>
+                        <a className='proyect'>
+                            <img src={proyects.image_url} alt=""/>
+                            <h2>{proyect.name}</h2>
                         </a>
                     </Link>
                 ))
             }
 
             <style jsx> {`
-            .channels {
+            .proyects {
                 display: grid;
                 grid-gap: 15px;
                 padding: 15px;
                 margin-right: 70px;
                 grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             }
-            a.channel {
+            a.proyects {
                 display: block;
                 margin-bottom: 0.5em;
                 color: #333;
                 text-decoration: none;
             }
-            .channel img {
+            .proyect img {
                 border-radius: 3px;
                 box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
                 width: 100%;
