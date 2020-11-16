@@ -9,6 +9,7 @@ import Error from './_error';
 const Index = (props) => {
 
     const {portfolio, statusCode} = props;
+    
     if(statusCode !== 200){
         return <Error statusCode={statusCode} />
     }
@@ -30,7 +31,7 @@ const Index = (props) => {
 
  Index.getInitialProps = async ({ res }) => {
     try{
-        let req = await fetch('http://localhost:3000/api/portfolio');
+        let req = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio');
         let {body: portfolio} = await req.json();
         return { portfolio, statusCode: 200 }
 
