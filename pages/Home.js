@@ -28,7 +28,7 @@ const Home = (props) => {
     );
 
 }
-export async function getStaticProps() {
+/* export async function getStaticProps() {
     const res = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio')
     const portfolio = await res.json()
     return {
@@ -37,9 +37,9 @@ export async function getStaticProps() {
         statusCode: 200
       },
     }
-  }
+  } */
 
-/*  Index.getInitialProps = async ({ res }) => {
+ Home.getInitialProps = async ({ res }) => {
     try{
         let req = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio');
         
@@ -50,7 +50,7 @@ export async function getStaticProps() {
         res.statusCode = 503
         return { portfolio: null, statusCode: 503 }
     }
-}  */
+}  
 
 
 export default Home;
