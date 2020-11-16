@@ -16,5 +16,5 @@ const portfolio = [
   export default(req, res) =>{
       res.statusCode= 200
       res.setHeader('Content-Type', 'application/json')
-      res.send()
+      res.send(JSON.stringify(portfolio))
   }
