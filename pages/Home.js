@@ -10,9 +10,9 @@ const Home = (props) => {
 
     const {portfolio, statusCode} = props;
     
-    if(statusCode !== 200){
+/*     if(statusCode !== 200){
         return <Error statusCode={statusCode} />
-    }
+    } */
     return ( 
         <Layout title="Luis Brito CV">
 
@@ -28,8 +28,8 @@ const Home = (props) => {
     );
 
 }
-/* export async function getStaticProps() {
-    const res = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio')
+/*  export async function getStaticProps() {
+    const res = await fetch('https://curriculum-portfolio-eight.vercel.app/api/portfolio')
     const portfolio = await res.json()
     return {
       props: {
@@ -37,13 +37,13 @@ const Home = (props) => {
         statusCode: 200
       },
     }
-  } */
+  }  */
 
  Home.getInitialProps = async ({ res }) => {
     try{
-        let req = await fetch('curriculum-portfolio-eight.vercel.app/api/portfolio');
+        let req = await fetch('https://curriculum-portfolio-eight.vercel.app/api/portfolio');
         
-        let {body: portfolio} = await req.json();
+        let portfolio = await req.json();
         return { portfolio, statusCode: 200 }
 
     } catch(e){

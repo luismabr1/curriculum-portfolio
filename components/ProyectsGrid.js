@@ -5,7 +5,7 @@ const ProyectsGrid = (props) => {
     console.log(props)
     return (
         <div id="portfolio">
-            <h1>Proyectos realizados (aun en desarrollo... Estos son datos de prueba...)</h1>
+            <h1>Proyectos realizados</h1>
         <div className="proyects">
             {
                 proyects.map((proyect) => ( 
@@ -13,7 +13,7 @@ const ProyectsGrid = (props) => {
                         id: proyect.id
                      }} key={proyect.id}>
                         <a className='proyect'>
-                            <img src={proyects.image_url} alt=""/>
+                            <img src={proyect.image_url} alt=""/>
                             <h2>{proyect.name}</h2>
                         </a>
                     </Link>

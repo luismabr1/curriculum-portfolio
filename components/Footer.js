@@ -7,12 +7,12 @@ const Footer = () => {
     <div className="Footer">
         <div className="container-fluid-footer">
             <div className="Footer__brand">
-                <Link href="/">
+                <Link href="https://github.com/luismabr1">
                     <a className="Footer__brand">
                     <img className="Footer__brand-logo" src={logo} alt="Logo" />
                     <span className="font-weight-light">Luis</span>
                     <span className="font-weight-bold">Brito </span>
-                    <span className="font-weight-light"><i>En desarrollo...</i></span>
+                    <span className="font-weight-light"><i></i></span>
                     </a>
                 </Link>
             </div>
