@@ -28,10 +28,21 @@ const Index = (props) => {
     );
 
 }
+export async function getStaticProps() {
+    const res = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio')
+    const portfolio = await res.json()
+    return {
+      props: {
+        portfolio,
+        statusCode: 200
+      },
+    }
+  }
 
- Index.getInitialProps = async ({ res }) => {
+/*  Index.getInitialProps = async ({ res }) => {
     try{
         let req = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio');
+        
         let {body: portfolio} = await req.json();
         return { portfolio, statusCode: 200 }
 
@@ -39,7 +50,7 @@ const Index = (props) => {
         res.statusCode = 503
         return { portfolio: null, statusCode: 503 }
     }
-} 
+}  */
 
 
 export default Index;

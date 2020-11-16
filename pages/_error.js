@@ -13,6 +13,7 @@ const Error = (props) => {
           :
           <div className="message">
             <h1>Hubo un problema :(</h1>
+            <h1>Error {statusCode}</h1>
             <p>Intenta nuevamente en unos segundos</p>
           </div>
          }

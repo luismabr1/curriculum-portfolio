@@ -28,7 +28,7 @@ const ProyectsGrid = (props) => {
                 margin-right: 70px;
                 grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             }
-            a.proyects {
+            a.proyect {
                 display: block;
                 margin-bottom: 0.5em;
                 color: #333;
