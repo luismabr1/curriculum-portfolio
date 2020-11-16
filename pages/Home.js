@@ -41,7 +41,7 @@ const Home = (props) => {
 
  Home.getInitialProps = async ({ res }) => {
     try{
-        let req = await fetch('https://curriculum-portfolio-six.vercel.app/api/portfolio');
+        let req = await fetch('https://curriculum-portfolio-k46t1rrma.vercel.app/api/portfolio');
         
         let {body: portfolio} = await req.json();
         return { portfolio, statusCode: 200 }
