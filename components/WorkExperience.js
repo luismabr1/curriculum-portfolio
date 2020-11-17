@@ -14,7 +14,7 @@ const WorkExperience = () => (
                 <span>Desarrollador Web</span>
                 <span>Marzo 2017 - actualidad</span>
                 <span>Caracas</span>
-                <p><i>Creacion de pagina web oficial del Modelo Venezolano de Naciones Unidas (MOVENU). Aplicacion para el registro de inscripciones.</i></p>
+                <p><i>Creación y actualización de página web oficial, creación de base de datos y aplicación web para el proceso de inscripciones en php, asesoría en el uso, gestión y administración de la aplicación. Configuración de subdominios e instalación de plantillas en Wordpress para blog y galería.</i></p>
         </div>
 
             <style jsx> {`
