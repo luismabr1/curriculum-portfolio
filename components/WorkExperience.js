@@ -19,6 +19,8 @@ const WorkExperience = () => (
 
             <style jsx> {`
             .container-work{
+                display: grid;
+                width:100%;
                 margin-right: 70px;
                 margin-top:20px;
                 border-radius: 3px;

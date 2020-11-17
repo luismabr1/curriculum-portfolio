@@ -21,6 +21,8 @@ const PersonalData = () => (
                 </li>
                 <li> Email: lsbrt4 @gmail.com
                 </li>
+                <li>Github: https://github.com/luismabr1
+                </li>
             </ul>
         </div>
     </div>
